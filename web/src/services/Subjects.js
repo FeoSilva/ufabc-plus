@@ -7,6 +7,10 @@ class Subjects {
   async search(q) {
     return await Axios.get('/subjects/search?q=' + q)
   }
+
+  async create(params) {
+    return await Axios.post('/subjects/', params)
+  }
 }
 
 export default (new Subjects)

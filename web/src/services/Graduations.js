@@ -20,6 +20,14 @@ class Graduations {
       params,
     });
   }
+
+  async createSubjectGraduation(params) {
+    return await Axios.post(`/subjectGraduations/`, params)
+  }
+
+  async updateSubjectGraduations(id, params) {
+    return await Axios.put(`/subjectGraduations/${id}`, params)
+  }
 }
 
 export default new Graduations();

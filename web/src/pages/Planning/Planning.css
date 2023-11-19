@@ -93,6 +93,15 @@
 .graduation-term-subjects.mandatory {
   background-color: var(--ufabcnext-orange);
 }
+.graduation-term-subjects.firstLevelMandatory {
+  background-color: var(--ufabcnext-orange);
+}
+.graduation-term-subjects.secondLevelMandatory {
+  background-color: var(--ufabcnext-medium-orange);
+}
+.graduation-term-subjects.thirdLevelMandatory {
+  background-color: var(--ufabcnext-hard-orange);
+}
 .graduation-term-subjects.limited {
   background-color: var(--ufabcnext-blue-light);
 }
@@ -100,8 +109,8 @@
   background-color: var(--ufabcnext-pink);
 }
 .graduation-term-subjects.completed {
-  background: rgb(5 194 24 / 12%);
-  border: 1px solid #05c218;
+  /* background: rgb(5 194 24 / 12%);
+  border: 1px solid #05c218; */
 }
 .graduation-term-subjects.completed .graduation-subject-credits {
   background-color: #05c218;
@@ -123,6 +132,7 @@
   top: 6px;
   width: 100%;
 }
+
 .graduation-subject-credits {
   width: 20px;
   height: 20px;
