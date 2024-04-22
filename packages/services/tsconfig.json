@@ -1,4 +1,5 @@
 {
   "extends": "tsconfig/react.json",
-  "include": [".", ".eslintrc.cjs"]
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
 }

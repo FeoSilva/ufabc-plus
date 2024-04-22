@@ -104,6 +104,11 @@ const internalNavigationItems = [
     route: '/performance',
   },
   {
+    title: 'Planejamento',
+    icon: 'mdi-notebook',
+    route: '/planning'
+  },
+  {
     title: 'Dados da Matrícula',
     icon: 'mdi-book-multiple',
     route: '/stats',
