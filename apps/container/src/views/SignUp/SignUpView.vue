@@ -110,6 +110,7 @@
               class="mb-4 w-100"
               placeholder="joao.silva"
               prepend-inner-icon="mdi-email"
+              hint="Sem o @aluno.ufabc.edu.br"
               :error-messages="email.errorMessage.value"
             >
               <template #append-inner>@aluno.ufabc.edu.br</template>
