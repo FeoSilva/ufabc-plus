@@ -6,8 +6,8 @@ export const definedQuarters = [
   },
   {
     title: '3/2024',
-    startDate: '2024-09-16',
-    endDate: '2024-12-07',
+    startDate: '2024-09-30',
+    endDate: '2024-12-21',
   },
   {
     title: '2/2024',
