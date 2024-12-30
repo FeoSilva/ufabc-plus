@@ -24,11 +24,11 @@ export type UserConfirmResponse = {
 export const Users = {
   completeSignup: (params: UserSignup) => api.put('/users/complete', params),
   confirmSignup: (token: string) =>
-    api.post<UserConfirmResponse>('/account/confirm', { token }),
-  resendEmail: () => api.post('/users/me/resend'),
+    api.post<UserConfirmResponse>('/users/confirm', { token }),
+  resendEmail: () => api.post('/users/resend'),
   recovery: (email: string) => api.post('/users/me/recover', { email }),
-  delete: () => api.delete('/users/me/delete'),
+  delete: () => api.delete('/users/remove'),
   info: () => api.get<User>('/users/info'),
   facebookAuth: (params: FacebookAuth) =>
-    api.post<FacebookConfirmResponse>('/facebook/sync', params),
+    api.post<FacebookConfirmResponse>('/users/facebook', params),
 };
