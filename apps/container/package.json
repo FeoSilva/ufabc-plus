@@ -27,6 +27,8 @@
     "highcharts": "11.4.1",
     "highcharts-vue": "1.4.3",
     "lodash.debounce": "4.0.8",
+    "pinia": "^2.3.0",
+    "pinia-plugin-persistedstate": "^4.2.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "services": "*",
@@ -40,9 +42,9 @@
     "zod": "3.23.4"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
     "@babel/plugin-transform-private-methods": "7.24.1",
     "@babel/preset-env": "7.24.4",
-    "@babel/plugin-syntax-dynamic-import": "7.8.3",
     "@testing-library/jest-dom": "6.4.2",
     "@testing-library/user-event": "14.5.2",
     "@testing-library/vue": "8.0.3",

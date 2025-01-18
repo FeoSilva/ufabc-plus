@@ -2,6 +2,11 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 
+import { createPinia } from 'pinia';
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
+
 import {
   VueQueryPlugin,
   QueryClient as QueryClientVue,
@@ -21,7 +26,7 @@ import '@mdi/font/css/materialdesignicons.css';
 import HighchartsVue from 'highcharts-vue';
 import Highcharts from 'highcharts';
 import annotationsInit from 'highcharts/modules/annotations';
-import accessibility from "highcharts/modules/accessibility";
+import accessibility from 'highcharts/modules/accessibility';
 import { QueryClient } from '@tanstack/query-core';
 import { theme } from './theme';
 
@@ -61,6 +66,7 @@ declare global {
 }
 
 createApp(App)
+  .use(pinia)
   .use(router)
   .use(vuetify)
   .use(elementPlus)
