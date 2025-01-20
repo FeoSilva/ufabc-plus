@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 20.8
           cache: 'yarn'
@@ -28,7 +28,7 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: Run tests and lint
-        uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v5
         with:
           cmd: ${{ matrix.command }}
   build:
@@ -41,7 +41,7 @@ jobs:
       AWS_S3_BUCKET_NAME: ${{ github.ref == 'refs/heads/main' && secrets.AWS_S3_BUCKET_NAME_PRD  || secrets.AWS_S3_BUCKET_NAME_HOM }}
       AWS_DISTRIBUTION_ID: ${{ github.ref == 'refs/heads/main' && secrets.AWS_DISTRIBUTION_ID_PRD  || secrets.AWS_DISTRIBUTION_ID_HOM }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20.8
